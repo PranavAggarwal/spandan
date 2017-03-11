@@ -63,7 +63,7 @@
 					</span>
 					<div class="form-fields col-xs-11 col-sm-7">
 						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_1" >
-						 	<option hidden class="place">Preference 1</option>
+						 	<option hidden  disabled selected class="place">Preference 1</option>
 						 	<% @events.each do |event| %>
 						 		<option value="<%=event.id%>"><%=event.name%></option>
 						 	<%end%>
@@ -77,9 +77,10 @@
 					</span>
 					<div class="form-fields col-xs-11 col-sm-7">
 						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_2">
-						 	<option hidden class="place">Preference 2</option>
+						 	<option hidden  disabled selected class="place">Preference 2</option>
 						 	<% @events.each do |event| %>
-						 		<option value="<%=event.id%>"><%=event.name%></option>
+						 		
+						 			<option value="<%=event.id%>"><%=event.name%></option>
 						 	<%end%>	
 						 </select> 
 					</div>
@@ -91,7 +92,7 @@
 					</span>
 					<div class="form-fields col-xs-11 col-sm-7">
 						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_3">
-						 	<option hidden class="place">Preference 3</option>
+						 	<option hidden  disabled selected class="place">Preference 3</option>
 						 	<% @events.each do |event| %>
 						 		<option value="<%=event.id%>"><%=event.name%></option>
 						 	<%end%>

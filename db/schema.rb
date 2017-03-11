@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170308185810) do
+ActiveRecord::Schema.define(version: 20170311171329) do
 
   create_table "events", force: :cascade do |t|
     t.string   "name",              limit: 255
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20170308185810) do
     t.integer "event_id",     limit: 4
     t.integer "volunteer_id", limit: 4
   end
+
+  add_index "events_volunteers", ["event_id", "volunteer_id"], name: "index_events_volunteers_on_event_id_and_volunteer_id", unique: true, using: :btree
 
   create_table "notifications", force: :cascade do |t|
     t.integer  "user_id",    limit: 4
