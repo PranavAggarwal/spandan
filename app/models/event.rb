@@ -1,7 +1,7 @@
 class Event < ActiveRecord::Base
   has_and_belongs_to_many :volunteers
   has_many :volunteer_requests
-  has_attached_file :icon, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: WEBLINK + "/images/def.png"
+  has_attached_file :icon, styles: { medium: "300x300>", thumb: "100x100>" }, default_url: "/images/def.png"
   validates_attachment_content_type :icon, content_type: /\Aimage\/.*\Z/
   #validates :vol_req, presence: true
 

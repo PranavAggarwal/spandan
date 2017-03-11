@@ -1,6 +1,6 @@
 ####### APP LINK
 
-WEBLINK = "http://localhost:3000/"
+WEBLINK = "/"
 
 ### T SHIRT SIZES ###
 #	used in : RegistrationController, volunteer_registration action

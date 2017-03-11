@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require wice_grid
 //= require_tree .
 //= require froala_editor.min.js
 //= require plugins/align.min.js
@@ -38,4 +39,3 @@
 //= require plugins/save.min.js
 //= require plugins/table.min.js
 //= require plugins/url.min.js
-//= require wice_grid

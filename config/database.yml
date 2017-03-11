@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password: shivang
+  password: Jindal.house36
   host: 127.0.0.1
 
 development:
@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: spandan2016_production
-  username: spandan2016
-  password: <%= ENV['SPANDAN2016_DATABASE_PASSWORD'] %>
+  username: root
+  password: Jindal.house36
