@@ -191,10 +191,10 @@
 
             <div class="row">
 
-                <% Event.all.each do |event| %>
-                <% if event.event_type == INDIVIDUAL or event.event_type == TEAM%>
+                <% Event.where(:visible=> true).each do |event| %>
+                <% #if event.event_type == INDIVIDUAL or event.event_type == TEAM%>
                 <div class="wow fadeInUp">
-                <div  class="col-sm-6 col-md-4  animations" onclick="location.href='<%= WEBLINK %>game/<%= event.name %>';" >
+                <div  class="col-sm-6 col-md-4  animations" onclick="location.href='<%= WEBLINK %>game/<%= event.name %>';" style="padding-top: 15px">
                     <div class="media "> 
                         <!-- <div class="pull-left"> -->
                             <center><%= image_tag event.icon , :class => "responsive"%></center>
@@ -202,18 +202,18 @@
                         <br>
                         
                         <div class="media-body ">
-                                <% if event.description.to_s.length > 0 %>
+                                <% #if event.description.to_s.length > 0 %>
                                 <h3  class="media-heading" style="font-size: 2em;" ><%= event.name %></h3>
 
-                                <% else %>
-                                <h3 id="media-onhover" class="media-heading-alone"><%= event.name %></h3>
-        
-                                <% end %>
+                                <% #else %>
+                                <!-- <h3 id="media-onhover" class="media-heading-alone"><%= event.name %></h3>
+         -->
+                                <% #end %>
                         </div>
                     <!-- </div> -->
                 </div>
 
-                 <% end end %>
+                 <% end %>
                  </div>
             </div><!--/.row-->
         </div><!--/.container-->
