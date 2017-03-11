@@ -13,7 +13,7 @@ class VolunteersController < ApplicationController
                     #    event.vol_req-=1
                     #   event.save
                 # end 
-				flash[:notice] = "You are successfully registered for volunteer"
+				flash[:notice] = "You are successfully registered as a volunteer"
         		format.html { redirect_to  welcome_index_url}
         	else
         		format.html { render :new }
