@@ -45,7 +45,8 @@
 }
 
 .dropdown_feed select{
-	height:5%;
+	font-weight:bold;
+	height:1.8vw;
 	margin-bottom:15px;
 	width:100%;
 	border-radius:4px;
@@ -61,39 +62,6 @@
 
 .dropdown_feed select option:hover{
 	background:#ccc;
-}
-
-.selectBox {
-  position: relative;
-}
-
-.selectBox select {
-  width: 100%;
-}
-
-.overSelect {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
-
-#checkboxes {
-  max-height:80px;
-  overflow:auto;
-  display: none;
-  border: 1px solid black;
-  background:white;
-  color:#93BB24;
-}
-
-#checkboxes label {
-  display: block;
-}
-
-#checkboxes label:hover {
-  background-color: black;
 }
 
 .submit_sub_btn{
@@ -118,17 +86,21 @@
 
 .form-control::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #93BB24;
+    font-weight:bold;
 }
 .form-control:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #93BB24;
    opacity:  1;
+   font-weight:bold;
 }
 .form-control::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #93BB24;
    opacity:  1;
+   font-weight:bold;
 }
 .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #93BB24;
+   font-weight:bold;
 }
 
 #only3{
@@ -143,4 +115,8 @@
 	.submit_sub_btn{
 		margin-left:1vw;	
 	}
+}
+
+.form-field select .place{
+	font-weight:bold;
 }

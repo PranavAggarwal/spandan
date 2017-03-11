@@ -63,25 +63,42 @@
 							<i class="fa fa-list-alt fa-2x"></i>
 					</span>
 					<div class="form-fields col-xs-7">
-						 <span class="selectBox" onclick="showCheckboxes()">
-					    		<select>
-					        		<option>Select Events</option>
-					      		</select>
-					      		<span class="overSelect"></span>
-					    </span>
-					    <span id="checkboxes" class ="sub-menu-parent">
-					    	<% @events.each do |event| %>
-					    		<!-- <%# if event.vol_req > 0 %> -->
-					      			<label for="volunteer_event_ids_<%=event.id%>">
-					      	  			<input type="checkbox" name="volunteer[event_ids][]" id="volunteer_event_ids_<%=event.id%>"
-					      	  				value="<%= event.id%>" > <%= event.name%> 
-					      			</label>
-					      		<!--<%#end%> -->
-					      	<%end%>
-
-					    </span> 
+						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_1" >
+						 	<option hidden class="place">Preference 1</option>
+						 	<% @events.each do |event| %>
+						 		<option value="<%=event.id%>"><%=event.name%></option>
+						 	<%end%>
+						 </select> 
 					</div>
-					<div class="alert" id="only3">*Choose max 3 events</div>   
+					<!-- <div class="alert" id="only3">*Choose max 3 events</div> -->   
+				</div>
+				<div class="row dropdown_feed" id="dropdown1">
+				    <span class="ccform-addon">
+							<i class="fa fa-list-alt fa-2x"></i>
+					</span>
+					<div class="form-fields col-xs-7">
+						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_2">
+						 	<option hidden class="place">Preference 2</option>
+						 	<% @events.each do |event| %>
+						 		<option value="<%=event.id%>"><%=event.name%></option>
+						 	<%end%>	
+						 </select> 
+					</div>
+					<!-- <div class="alert" id="only3">*Choose max 3 events</div> -->   
+				</div>
+				<div class="row dropdown_feed" id="dropdown1">
+				    <span class="ccform-addon">
+							<i class="fa fa-list-alt fa-2x"></i>
+					</span>
+					<div class="form-fields col-xs-7">
+						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_3">
+						 	<option hidden class="place">Preference 3</option>
+						 	<% @events.each do |event| %>
+						 		<option value="<%=event.id%>"><%=event.name%></option>
+						 	<%end%>
+						 </select> 
+					</div>
+					<!-- <div class="alert" id="only3">*Choose max 3 events</div> -->   
 				</div>
 				<% if @volunteer.errors.any? %>
 				    <div id="error_explanation" class="row col-xs-7">
@@ -106,38 +123,3 @@
 </form>
 <%end%>
 </body>
-<script>
-var expanded = false;
-
-function showCheckboxes() {
-  var checkboxes = document.getElementById("checkboxes");
-  if (!expanded) {
-    checkboxes.style.display = "block";
-    expanded = true;
-  } else {
-    checkboxes.style.display = "none";
-    expanded = false;
-  }
-}
-// function maxAllowedMultiselect(obj, maxAllowedCount) {
-//             var selectedOptions = jQuery('#'+obj.id+" option[value!=\'\']:selected");
-//             if (selectedOptions.length >= maxAllowedCount) {
-//                 if (selectedOptions.length > maxAllowedCount) {
-//                     selectedOptions.each(function(i) {
-//                         if (i >= maxAllowedCount) {
-//                             jQuery(this).prop("selected",false);
-//                         }
-//                     });
-//                 }
-//                 jQuery('#'+obj.id+' option[value!=\'\']').not(':selected').prop("disabled",true);
-//             } else {
-//                 jQuery('#'+obj.id+' option[value!=\'\']').prop("disabled",false);
-//             }
-//         }
-// $("#checkboxes").on('change', function(e) {
-//     if (Object.keys($(this).val()).length > 3) {
-//         console.log($('input[value="' +$(this).val().toString().split(',')[3] + '"]'));
-//         $('input[value="' +$(this).val().toString().split(',')[3] + '"]').prop('selected', false);
-//     }
-// });
-</script>
