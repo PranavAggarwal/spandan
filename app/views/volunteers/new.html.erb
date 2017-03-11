@@ -1,5 +1,4 @@
-
-
+<link href="<%= WEBLINK %>css/main.css" rel="stylesheet">
 <body id="vol_body">
 <%= form_for(@volunteer) do |f| %>
 
@@ -14,7 +13,7 @@
 					<span class="ccform-addon">
 						<i class="fa fa-user fa-2x"></i>
 					</span>
-					<span class="form-fields col-xs-7">
+					<span class="form-fields col-xs-11 col-sm-7">
 						<%= f.text_field :name , :class => 'form-control',placeholder: "Name" ,:required => true %>
 					</span>
 					<div class="col-sm-1"></div>
@@ -23,7 +22,7 @@
 					<span class="ccform-addon">
 						<i class="fa fa-registered fa-2x"></i>
 					</span>
-					<span class="form-fields col-xs-7">
+					<span class="form-fields col-xs-11 col-sm-7">
 						<%= f.text_field :roll , :class => 'form-control' , placeholder: "Roll Number" ,:required => true ,:maxlength => 11%>
 					</span>
 					<div class="col-sm-1"></div>	
@@ -35,7 +34,7 @@
 					<span class="ccform-addon">
 						<i class="fa fa-mobile fa-3x"></i>
 					</span>
-					<span class="form-fields col-xs-7">
+					<span class="form-fields col-xs-11 col-sm-7">
 						<%= f.telephone_field :phone , :class => 'form-control',placeholder: "Mobile Number" ,:maxlength => 11%>
 					</span>
 					<!--<div class="col-sm-1"></div>-->
@@ -44,7 +43,7 @@
 					<span class="ccform-addon">
 						<i class="fa fa-shirtsinbulk fa-2x"></i>
 					</span>
-					<span class="form-fields col-xs-7">
+					<span class="form-fields col-xs-11 col-sm-7">
 						<%= f.select :tshirt_size, ['XL', 'L', 'M','S'] , {:prompt => 'Select Size'}, { :class => 'sub-menu-parent',:required => true} %>	
 					</span>
 					<!--<div class="col-xs-1"></div>-->
@@ -53,7 +52,7 @@
 					<span class="ccform-addon">
 						<i class="fa fa-envelope fa-2x"></i>
 					</span>
-					<span class="form-fields col-xs-7">
+					<span class="form-fields col-xs-11 col-sm-7">
 						<%= f.email_field :email , :class => 'form-control' ,placeholder: "Email" ,:required => true%>
 					</span>
 					<div class="col-xs-1"></div>
@@ -62,7 +61,7 @@
 				    <span class="ccform-addon">
 							<i class="fa fa-list-alt fa-2x"></i>
 					</span>
-					<div class="form-fields col-xs-7">
+					<div class="form-fields col-xs-11 col-sm-7">
 						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_1" >
 						 	<option hidden class="place">Preference 1</option>
 						 	<% @events.each do |event| %>
@@ -76,7 +75,7 @@
 				    <span class="ccform-addon">
 							<i class="fa fa-list-alt fa-2x"></i>
 					</span>
-					<div class="form-fields col-xs-7">
+					<div class="form-fields col-xs-11 col-sm-7">
 						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_2">
 						 	<option hidden class="place">Preference 2</option>
 						 	<% @events.each do |event| %>
@@ -90,7 +89,7 @@
 				    <span class="ccform-addon">
 							<i class="fa fa-list-alt fa-2x"></i>
 					</span>
-					<div class="form-fields col-xs-7">
+					<div class="form-fields col-xs-11 col-sm-7">
 						 <select name="volunteer[event_ids][]" id="volunteer_event_ids_3">
 						 	<option hidden class="place">Preference 3</option>
 						 	<% @events.each do |event| %>
