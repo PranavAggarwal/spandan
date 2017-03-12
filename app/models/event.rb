@@ -14,6 +14,15 @@ class Event < ActiveRecord::Base
   def spocs
     users = User.where(:spoc_event_id=>self.event_id)
   end
+
+  # Handling uniquness exception coming from db
+    def save(*args)
+      super
+      rescue ActiveRecord::RecordNotUnique => error
+        errors[:base] << "Please select Different preferences"
+        false
+      end
+
   # Returns a list of users who are volunteers for this event
   #def volunteers
   #  volunteers = User.where(:volunteer_event_id=>self.event_id)
