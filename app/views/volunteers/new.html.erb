@@ -1,4 +1,12 @@
 <link href="<%= WEBLINK %>css/main.css" rel="stylesheet">
+<style>
+	#dropdown1 a:hover{
+		text-decoration: underline;
+	}
+	#dropdown1 a:visited{
+		color:#93BB24;
+	}
+</style>
 <body id="vol_body">
 <%= form_for(@volunteer) do |f| %>
 
@@ -44,9 +52,9 @@
 						<i class="fa fa-shirtsinbulk fa-2x"></i>
 					</span>
 					<span class="form-fields col-xs-11 col-sm-7">
-						<%= f.select :tshirt_size, ['XXL','XL', 'L', 'M','S'] , {:prompt => 'T-shirt size'}, { :class => 'sub-menu-parent',:required => true} %>	
+						<%= f.select :tshirt_size, ['XXL','XL', 'L', 'M','S'] , {:prompt => 'T-shirt size'}, { :class => 'sub-menu-parent',:required => true} %>
+						<a href="table" target="_blank" style="font-size: 1.2em;">See size chart</a>	
 					</span>
-					<!--<div class="col-xs-1"></div>-->
 				</div>
 				<div class="row form-group">
 					<span class="ccform-addon">
@@ -57,30 +65,30 @@
 					</span>
 					<div class="col-xs-1"></div>
 				</div>
-				<div class="row dropdown_feed" id="dropdown1">
+				<div class="row dropdown_feed" id="dropdown2">
 					<span class="ccform-addon">
 						<i class="fa fa-shirtsinbulk fa-2x"></i>
 					</span>
 					<span class="form-fields col-xs-11 col-sm-7">
-						<%= f.collection_select :preference1, @events,:id,:name, {:prompt => 'preference1'}, { :class => 'sub-menu-parent',:required => true} %>	
+						<%= f.collection_select :preference1, @events,:id,:name, {:prompt => 'Preference1'}, { :class => 'sub-menu-parent',:required => true} %>	
 					</span>
 					<!--<div class="col-xs-1"></div>-->
 				</div>
-				<div class="row dropdown_feed" id="dropdown1">
+				<div class="row dropdown_feed" id="dropdown3">
 					<span class="ccform-addon">
 						<i class="fa fa-shirtsinbulk fa-2x"></i>
 					</span>
 					<span class="form-fields col-xs-11 col-sm-7">
-						<%= f.collection_select :preference2, @events,:id,:name, {:prompt => 'preference2'}, { :class => 'sub-menu-parent',:required => true} %>	
+						<%= f.collection_select :preference2, @events,:id,:name, {:prompt => 'Preference2'}, { :class => 'sub-menu-parent',:required => true} %>	
 					</span>
 					<!--<div class="col-xs-1"></div>-->
 				</div>
-				<div class="row dropdown_feed" id="dropdown1">
+				<div class="row dropdown_feed" id="dropdown4">
 					<span class="ccform-addon">
 						<i class="fa fa-shirtsinbulk fa-2x"></i>
 					</span>
 					<span class="form-fields col-xs-11 col-sm-7">
-						<%= f.collection_select :preference3, @events,:id,:name, {:prompt => 'preference3'}, { :class => 'sub-menu-parent',:required => true} %>	
+						<%= f.collection_select :preference3, @events,:id,:name, {:prompt => 'Preference3'}, { :class => 'sub-menu-parent',:required => true} %>	
 					</span>
 					<!--<div class="col-xs-1"></div>-->
 				</div>

@@ -36,6 +36,8 @@ class VolunteersController < ApplicationController
     end
     def show
     end
+    def table
+    end
     private
     def post_params
     	params.require(:volunteer).permit(:name,:phone , :email, :roll, :tshirt_size, :preference1, :preference2, :preference3 )

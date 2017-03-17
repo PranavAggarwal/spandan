@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :schedules
   resources :events
+  get 'volunteers/table', to: 'volunteers#table'
   resources :volunteers
   get 'registration/index'
 
@@ -33,6 +34,8 @@ Rails.application.routes.draw do
   # route to volunteer registration form
   get 'registration/volunteer_registration', to: 'registration#volunteer_registration'
   post 'registration/volunteer_registration', to: 'registration#volunteer_registration_process'
+
+
 
   # Admin panel
   get 'admin', to: 'admin#index'
