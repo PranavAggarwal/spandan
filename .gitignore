@@ -13,8 +13,8 @@
 /tmp
 /.idea
 /db/*.sqlite3
-#/config/secrets.yml
-#config/database.yml
+config/secrets.yml
+config/database.yml
 
 # Ignore application configuration
 /config/application.yml
