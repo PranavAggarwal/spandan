@@ -17,11 +17,14 @@ table tr{
 }
 
 .animations{
-	text-align: center
-    
+	text-align: center;
 }
 
 
 .animations:hover {
     transform:translateY(-20px);
+}
+
+#media-onhover:hover{
+  color: black;
 }
