@@ -182,11 +182,11 @@
   </a>
 </section><!--/#main-slider-->
 
-<!-- <section id="services" class="service-item" style="background-color: #93bb24;">
+ <section id="services" class="service-item" style="background-color: #93bb24;">
        <div class="container">
             <div class="center wow fadeInDown" >
-                <h2 style="color: black; font-weight: bold; font-size: 3em">SPORTS</h2>
-                 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p> 
+                <h2 style="color: black; font-weight: bold;">SPORTS</h2>
+                 <!-- <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>  -->
             </div>
 
             <div class="row">
@@ -202,24 +202,24 @@
                         <br>
                         
                         <div class="media-body ">
-                                <% #if event.description.to_s.length > 0 %>
-                                <h3  class="media-heading" style="font-size: 2em;" ><%= event.name %></h3>
+                                <% if event.description.to_s.length > 0 %>
+                                <h3  class="media-heading" ><%= event.name %></h3>
 
-                                <% #else %>
-                                 <h3 id="media-onhover" class="media-heading-alone"><%= event.name %></h3>
+                                <% else %>
+                                 <h3 id="media-onhover" class="media-heading-alone" style="font-size: 2.5em;"><%= event.name %></h3>
         
-                                <% #end %>
+                                <% end %>
                         </div>
                      </div> 
                 </div>
 
                  <% end %>
                  </div>
-            </div>.row
-        </div>/.container
-    </section>/#services
+            </div><!-- .row -->
+        </div><!-- /.container -->
+    </section><!-- services -->
 
- -->
+ 
 <section id="recent-works">
   <div class="container">
     <div class="center wow fadeInDown">

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Spandan 2017 | Feel the beat</title>
+  <title>Spandan 2017 | Game.Set.Match</title>
 
   <!-- core CSS -->
   <link href="<%= WEBLINK %>css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +78,7 @@
           %>
           <li><%= link_to 'Volunteer', {:controller=>'/volunteers', :action=>'new'} %></li>
           <li><%= link_to 'Contact', {:controller=>'/welcome', :action=>'contact'} %></li>
-          <!-- <li><% if !user_signed_in? %>
+           <li><% if !user_signed_in? %>
                 <li> <%= link_to('Log In', new_user_session_path)  %> </li>
 
                 <li><%= link_to('Sign Up', new_user_registration_path)  %>
@@ -89,7 +89,7 @@
               <li>
                 <%= link_to('Sign Out', destroy_user_session_path, :method=> :delete) %>
               </li>
-            <% end %> -->
+            <% end %>
             </ul>
       </div>
     </div><!--/.container-->
