@@ -40,12 +40,13 @@
     <div class="col-md-1">  </div>
     <div class="col-md-10">
       <ul class="nav nav-tabs nav-justified" id="hov">
-        <li class="active" style="font-size: 1.5em"><a data-toggle="tab" href="#home" id="hov">Home</a></li>
+        <li style="font-size: 1.5em"><a data-toggle="tab" href="#home" id="hov">Home</a></li>
         <li style="font-size: 1.5em"><a data-toggle="tab" href="#rules" id="hov">Rules</a></li>
         <li style="font-size: 1.5em"><a data-toggle="tab" href="#contact" id="hov">Contact Us</a></li>
-        <li style="font-size: 1.5em"><a data-toggle="tab" href="#schedule" id="hov">Schedule</a></li>
-        <li style="font-size: 1.5em"><a data-toggle="tab" href="#schedule-overall" id="hov">Overall Schedule</a></li> 
       </ul>
+       <!--  <li style="font-size: 1.5em"><a data-toggle="tab" href="#schedule" id="hov">Schedule</a></li>
+        <li style="font-size: 1.5em"><a data-toggle="tab" href="#schedule-overall" id="hov">Overall Schedule</a></li> --> 
+      
     </div>
     <div class="col-md-1">   </div>
   </div>
@@ -91,7 +92,7 @@
 	    	</div>
   		</div>
   	</div>
-    <div id="schedule" class="tab-pane fade">
+    <!-- <div id="schedule" class="tab-pane fade">
       <div class="center wow fadeInDown">
         <h2 style ="color: white; font-size: 2.6em; font-weight: bold">Schedule</h2>
         <%= form_tag("game_path",method: "get") do%>
@@ -107,14 +108,14 @@
         <p style="color: white;font-size: 1.1em">Also note that after you search, your search parameter will be applied for both "Schedule for this Game" table and "Overall Schedule" table so after
 		searching you can just switch tabs and check for your schedule</p>
 		<%= render 'grid_grid'%>
-        <!-- <div class="well">
+         <div class="well">
           <p><h3>
           </h3></p>
-        </div> -->
+        </div> 
       </div>
     </div>
-
-  <div id="schedule-overall" class="tab-pane fade">
+ -->
+  <!-- <div id="schedule-overall" class="tab-pane fade">
 	<div class="center wow fadeInDown">
 	  <h2 style ="color: white; font-size: 2.6em; font-weight: bold">Schedule</h2>
 		  <div class="field" style="float:left">
@@ -130,12 +131,12 @@
 	  <p style="color: white;font-size: 1.1em">Also note that after you search, your search parameter will be applied for both "Schedule for this Game" table and "Overall Schedule" table so after
 		searching you can just switch tabs and check for your schedule</p>
 	  <%= render 'grid_schedule' %>
-	 <!--  <div class="well">
+	  <div class="well">
 		<p><h3>
 	  </h3></p>
-	  </div> -->
+	  </div> 
 	</div>
-  </div>
+  </div> -->
 </div>
 </div>
 </div>
