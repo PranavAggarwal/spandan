@@ -11,3 +11,18 @@
 .animations:hover {
     transform:translateY(-10px);
 }
+
+.view_all{
+	color:black;
+	background:#93bb24;
+	border:0px;
+	font-size:2em;
+	margin-top:20px;
+	margin-left:40px;
+}
+
+@media (max-width: 480px){
+	.view_all{
+		margin-left:35vw;
+	}
+}

@@ -192,7 +192,7 @@
 
             <div class="row">
 
-                <% Event.where(:visible=>true).each do |event| %>
+                <% Event.limit(6).where(:visible=>true).each do |event| %>
                 <% #if event.event_type == INDIVIDUAL or event.event_type == TEAM%>
                 <div class="wow fadeInUp" >
                 <div  class="col-sm-6 col-md-4  animations" onclick="location.href='<%= WEBLINK %>game/<%= event.name %>';" style="padding-top: 15px ">
@@ -215,11 +215,17 @@
                 </div>
 
                  <% end %>
+                  <div class="row">
+                    <div class="col-md-5"></div>
+                    <div class="col-sm-12 col-md-5">
+                      <%= link_to '<button class="view_all">View all</button>'.html_safe, game_path, :target=>"_blank" %>
+                    </div>
+                  </div>
+
                  </div>
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#services-->
-
  
 <section id="recent-works">
   <div class="container">
