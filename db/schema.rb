@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170312202525) do
+ActiveRecord::Schema.define(version: 20170331173133) do
 
   create_table "events", force: :cascade do |t|
     t.string   "name",              limit: 255
@@ -111,6 +111,7 @@ ActiveRecord::Schema.define(version: 20170312202525) do
     t.integer  "volunteer_event_id",     limit: 4,   default: 0
     t.string   "phone_number",           limit: 255, default: ""
     t.integer  "tshirt_size",            limit: 2
+    t.integer  "gender",                 limit: 4
   end
 
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
