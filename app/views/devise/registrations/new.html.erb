@@ -17,6 +17,12 @@
     <%= f.text_field :roll_no, autocomplete: "off" %>
   </div>
 
+
+  <div class="field">
+    <%= f.label :gender %><br />
+    <%= f.select :gender, [['Male',0],['Female',1]] %>
+  </div>
+
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
