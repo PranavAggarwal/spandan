@@ -40,7 +40,7 @@ Rails.application.configure do
   # config.action_view.raise_on_missing_translations = true
 
   # Mailer configurations
-  config.action_mailer.default_url_options = { :host => 'spandan.iiitb.co.in' }
+  config.action_mailer.default_url_options = { :host => 'spandan.iiitb.ac.in' }
 
   config.action_mailer.default_options = {
     from: 'spandan@iiitb.org'
@@ -53,5 +53,5 @@ Rails.application.configure do
       :port => 587,
       :authentication => :plain,
       :enable_starttls_auto => true
-  }
+ }
 end

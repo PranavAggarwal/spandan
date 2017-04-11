@@ -1,0 +1,20 @@
+current directory: /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/src/helper-scripts/download_binaries
+/home/administrator/.rvm/rubies/ruby-2.3.3/bin/ruby -r ./siteconf20170318-31499-v5npqm.rb extconf.rb
+Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.23/rubyext-ruby-2.3.3-x86_64-linux.tar.gz into /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/download_cache
+*** Could not download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.23/rubyext-ruby-2.3.3-x86_64-linux.tar.gz: The requested URL returned error: 404 Not Found
+Attempting to download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.23/rubyext-ruby-2.3.3-x86_64-linux.tar.gz into /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/download_cache
+*** Could not download https://s3.amazonaws.com/phusion-passenger/binaries/passenger/by_release/5.0.23/rubyext-ruby-2.3.3-x86_64-linux.tar.gz: The requested URL returned error: 403 Forbidden
+Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.23/nginx-1.8.0-x86_64-linux.tar.gz into /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/download_cache
+Attempting to download https://oss-binaries.phusionpassenger.com/binaries/passenger/by_release/5.0.23/agent-x86_64-linux.tar.gz into /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/download_cache
+
+current directory: /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/src/helper-scripts/download_binaries
+make "DESTDIR=" clean
+true
+
+current directory: /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/src/helper-scripts/download_binaries
+make "DESTDIR="
+true
+
+current directory: /home/administrator/spandan/vendor/bundle/ruby/2.3.0/gems/passenger-5.0.23/src/helper-scripts/download_binaries
+make "DESTDIR=" install
+true

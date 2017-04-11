@@ -77,7 +77,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-  config.action_mailer.default_url_options = { :host => 'spandan.iiitb.co.in' }
+  config.action_mailer.default_url_options = { :host => 'spandan.iiitb.ac.in' }
 
   config.action_mailer.default_options = {
     from: 'spandan@iiitb.org'
@@ -90,5 +90,6 @@ Rails.application.configure do
       :port => 587,
       :authentication => :plain,
       :enable_starttls_auto => true
-  }
+ }
+
 end

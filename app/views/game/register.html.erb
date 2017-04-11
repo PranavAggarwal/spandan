@@ -43,7 +43,7 @@
 
         <% begin %>
             <div class="field">
-              <%= label_tag ("Other Members") %><br>
+              <%= label_tag ("Vice Captain") %><br>
               <%= text_field_tag "team_mates[]" %>
             </div><br>
             <% $i+=1 %>
@@ -55,6 +55,8 @@
             <div class="alert alert-danger">
                 <center><h2>You have already registered for this event</h2></center><br>
             </div>
+	<% elsif (Date.today>@event.last_date)%>
+		<center><p>Registrarions are closed now</p></center>
         <% else%>
             <center> <%= submit_tag "Register" %></center>
         <%end%>
